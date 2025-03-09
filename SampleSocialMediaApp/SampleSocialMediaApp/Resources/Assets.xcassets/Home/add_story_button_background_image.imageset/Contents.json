@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "add_story_button_background_image.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

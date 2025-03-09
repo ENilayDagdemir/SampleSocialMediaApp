@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImagesCollectionViewCell" customModule="SocialMediaAppCaseStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51c-Bb-zer" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="121"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="IPg-bq-Ej3" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="157" height="121"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_image_1" translatesAutoresizingMaskIntoConstraints="NO" id="oDp-fW-9yX" userLabel="Post Image View">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="121"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oDp-fW-9yX" secondAttribute="bottom" id="RsI-mD-bxm"/>
+                                    <constraint firstItem="oDp-fW-9yX" firstAttribute="top" secondItem="IPg-bq-Ej3" secondAttribute="top" id="oef-I4-xv0"/>
+                                    <constraint firstAttribute="trailing" secondItem="oDp-fW-9yX" secondAttribute="trailing" id="p3K-Qy-jbW"/>
+                                    <constraint firstItem="oDp-fW-9yX" firstAttribute="leading" secondItem="IPg-bq-Ej3" secondAttribute="leading" id="yT4-FY-sWl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IPg-bq-Ej3" secondAttribute="trailing" id="Gkm-CH-Ehi"/>
+                            <constraint firstItem="IPg-bq-Ej3" firstAttribute="leading" secondItem="51c-Bb-zer" secondAttribute="leading" id="Jnm-C4-DDA"/>
+                            <constraint firstItem="IPg-bq-Ej3" firstAttribute="top" secondItem="51c-Bb-zer" secondAttribute="top" id="Nwo-JA-36H"/>
+                            <constraint firstAttribute="bottom" secondItem="IPg-bq-Ej3" secondAttribute="bottom" id="X1g-kZ-Qkx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="51c-Bb-zer" secondAttribute="trailing" id="BSt-gY-vnm"/>
+                <constraint firstItem="51c-Bb-zer" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EjD-sz-45Y"/>
+                <constraint firstItem="51c-Bb-zer" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ndn-6C-IPL"/>
+                <constraint firstAttribute="bottom" secondItem="51c-Bb-zer" secondAttribute="bottom" id="SRo-d1-x4g"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="IPg-bq-Ej3" id="EEj-FP-edW"/>
+                <outlet property="postImageView" destination="oDp-fW-9yX" id="eRi-QN-jjh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="109.48660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="post_image_1" width="640" height="853"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

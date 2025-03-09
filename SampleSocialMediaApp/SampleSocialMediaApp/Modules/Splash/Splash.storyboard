@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8s-zC-T2t">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="4e3-xv-bDR">
+            <objects>
+                <viewController storyboardIdentifier="Splash" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8s-zC-T2t" customClass="SplashViewController" customModule="SocialMediaAppCaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT6-ai-9nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-2e-jMv" userLabel="Background Image View">
+                                <rect key="frame" x="-22" y="-52" width="397" height="864"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Kex-Ra-zbM">
+                                <rect key="frame" x="116.66666666666669" y="560.66666666666663" width="142" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Rpt-f4-y6o"/>
+                                    <constraint firstAttribute="width" constant="142" id="cte-OB-exd"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7P-5l-qhA" userLabel="Next Button">
+                                <rect key="frame" x="109" y="543.66666666666663" width="366" height="366.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="69b-9j-iHh"/>
+                                    <constraint firstAttribute="width" constant="366" id="9Ai-t8-mb5"/>
+                                    <constraint firstAttribute="height" constant="366.32999999999998" id="MPw-gU-IVm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="NxX-Us-bQD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="splash_button_background_icon"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onNextButtonPressed" destination="d8s-zC-T2t" eventType="touchUpInside" id="vp0-aR-uwq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_icon" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-mh-5V5" userLabel="Icon Image View">
+                                <rect key="frame" x="30.666666666666657" y="270.33333333333337" width="314" height="271.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="314" id="5gd-Qo-Yb9"/>
+                                    <constraint firstAttribute="height" priority="750" constant="271" id="SI4-47-pSm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="243" id="WEM-Kx-Jvc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="XBQ-eZ-BBp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Social Media App!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-a7-T1s" userLabel="Title Label">
+                                <rect key="frame" x="71.666666666666686" y="155" width="232" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="beA-op-k0U"/>
+                                    <constraint firstAttribute="width" constant="232" id="eab-iO-m3L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lyC-a7-T1s" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="1Qr-jv-HoX"/>
+                            <constraint firstAttribute="bottom" secondItem="f7P-5l-qhA" secondAttribute="bottom" constant="-98" id="1xa-oh-bsu"/>
+                            <constraint firstAttribute="trailing" secondItem="GdC-2e-jMv" secondAttribute="trailing" id="EmB-Oe-vyl"/>
+                            <constraint firstItem="wbd-mh-5V5" firstAttribute="centerY" secondItem="IFj-I9-EFs" secondAttribute="centerY" id="F4B-k5-2dV"/>
+                            <constraint firstItem="GdC-2e-jMv" firstAttribute="top" secondItem="IFj-I9-EFs" secondAttribute="top" constant="-52" id="Gc0-2d-fET"/>
+                            <constraint firstAttribute="bottom" secondItem="GdC-2e-jMv" secondAttribute="bottom" id="HsA-n7-tb4"/>
+                            <constraint firstItem="Kex-Ra-zbM" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="LaA-RI-bOT"/>
+                            <constraint firstItem="wbd-mh-5V5" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="NlP-Zm-GQt"/>
+                            <constraint firstItem="f7P-5l-qhA" firstAttribute="top" secondItem="wbd-mh-5V5" secondAttribute="bottom" constant="2" id="Szr-Go-jXW"/>
+                            <constraint firstItem="wbd-mh-5V5" firstAttribute="top" secondItem="lyC-a7-T1s" secondAttribute="bottom" priority="750" constant="31.333333333333371" id="VaQ-dH-WJB"/>
+                            <constraint firstAttribute="trailing" secondItem="f7P-5l-qhA" secondAttribute="trailing" constant="-100" id="X4W-64-1xl"/>
+                            <constraint firstItem="Kex-Ra-zbM" firstAttribute="top" secondItem="wbd-mh-5V5" secondAttribute="bottom" constant="19" id="a1y-7K-5X5"/>
+                            <constraint firstItem="GdC-2e-jMv" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leading" constant="-22" id="lXq-rI-SfL"/>
+                            <constraint firstItem="lyC-a7-T1s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="15" id="mtF-Wv-3gs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2Z-2f-Val"/>
+                    <connections>
+                        <outlet property="btnNext" destination="f7P-5l-qhA" id="epx-mY-Hpe"/>
+                        <outlet property="iconImageView" destination="wbd-mh-5V5" id="sE7-J1-dvd"/>
+                        <outlet property="lblTitle" destination="lyC-a7-T1s" id="0lE-n2-r8V"/>
+                        <outlet property="pageControl" destination="Kex-Ra-zbM" id="Gpv-Kq-pC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64.799999999999997" y="82.019704433497537"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_background" width="282" height="570"/>
+        <image name="splash_button_background_icon" width="276" height="276"/>
+        <image name="splash_icon" width="242" height="199"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
